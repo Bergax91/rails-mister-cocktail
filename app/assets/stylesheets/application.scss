@@ -9,5 +9,9 @@
 @import "font-awesome";
 
 // Your CSS partials
-@import "components/index";
+@import "components/*";
 @import "pages/index";
+
+html {
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/pointer_26.png'), auto;
+}

@@ -1,1 +1,27 @@
-<h1>Hello</h1>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet">
+
+<h1 class="hello">CocKtAil PaRty -18 aNs !!!</h1>
+
+<div class="container mt-3">
+
+
+<div class="row">
+<% @cocktails.each do |cocktail| %>
+<div class="col-4">
+  <div class="cocktail">
+    <div class="image"></div>
+      <div>
+        <h3 class="bouffe-card-content bouffe"><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+      </div>
+  </div>
+</div>
+<% end %>
+</div>
+</div>
+
+
+<p class="btn"><%= link_to 'Add a new cocktail', new_cocktail_path %></p>
+
+</div>
